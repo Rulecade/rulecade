@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Rulecade" parent="@android:style/Theme.DeviceDefault.NoActionBar">
+        <item name="android:windowBackground">@color/rc_background_primary</item>
+    </style>
+
+    <style name="Theme.Rulecade" parent="Base.Theme.Rulecade" />
+</resources>

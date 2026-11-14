@@ -1,0 +1,795 @@
+{
+  "version": 1,
+  "updated": "2026-11-14",
+  "questions": [
+    {
+      "id": "highway-lane1-passing",
+      "license": "highway",
+      "prompt": "편도 3차로 고속도로, 승용차가 1차로를 쓰는 때는?",
+      "choices": ["앞지르기할 때", "제한속도를 지키며 달릴 때", "뒤따르는 차가 없을 때", "밤이라 길이 한산할 때"],
+      "answer": 0,
+      "explanation": "1차로는 앞지르기 차로예요. 앞지르기를 마치면 오른쪽 차로로 돌아가요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 9",
+      "penalty": "승용 범칙금 4만 원, 벌점 10점"
+    },
+    {
+      "id": "highway-lane1-exception",
+      "license": "highway",
+      "prompt": "앞지르기가 아닌데도 1차로를 계속 달려도 되는 때는?",
+      "choices": ["정체로 시속 80km 미만일 때", "제한속도를 정확히 지킬 때", "뒤따르는 차가 없을 때", "2차로에 화물차가 많을 때"],
+      "answer": 0,
+      "explanation": "길이 막혀 시속 80km 미만으로만 달릴 수 있을 때는 1차로를 계속 달려도 돼요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 9"
+    },
+    {
+      "id": "highway-passing-side",
+      "license": "highway",
+      "prompt": "고속도로에서 앞차를 앞지를 때는 어느 쪽으로?",
+      "choices": ["앞차의 왼쪽", "앞차의 오른쪽", "비어 있는 쪽 아무 데나", "앞차가 느리면 오른쪽"],
+      "answer": 0,
+      "explanation": "앞지르기는 앞차의 왼쪽으로 해요. 오른쪽으로 앞지르면 위반이에요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제21조 제1항",
+      "penalty": "승용 범칙금 6만 원, 벌점 10점"
+    },
+    {
+      "id": "highway-truck-passing-lane",
+      "license": "highway",
+      "prompt": "편도 3차로 고속도로, 화물차가 앞지를 때 쓰는 차로는?",
+      "choices": ["2차로", "1차로", "3차로", "비어 있는 아무 차로"],
+      "answer": 0,
+      "explanation": "화물차 차로는 3차로예요. 앞지를 때는 바로 왼쪽인 2차로를 쓰고, 1차로는 쓸 수 없어요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 9"
+    },
+    {
+      "id": "highway-shoulder",
+      "license": "highway",
+      "prompt": "고속도로 갓길로 달려도 되는 때는?",
+      "choices": ["고장 등 부득이한 사정이 있을 때", "길이 막혀 차가 멈춰 있을 때", "나갈 출구가 바로 앞일 때", "아픈 사람을 태우고 서두를 때"],
+      "answer": 0,
+      "explanation": "갓길은 고장 같은 부득이한 경우나 정체 때 신호·경찰 지시가 있을 때만 달릴 수 있어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제60조 제1항",
+      "penalty": "승용 범칙금 6만 원, 벌점 30점"
+    },
+    {
+      "id": "highway-minimum-speed",
+      "license": "highway",
+      "prompt": "편도 2차로 이상 고속도로의 최저속도는?",
+      "choices": ["시속 50km", "시속 30km", "시속 40km", "시속 60km"],
+      "answer": 0,
+      "explanation": "고속도로 최저속도는 시속 50km예요. 시속 30km는 자동차전용도로의 최저속도예요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 제19조 제1항",
+      "penalty": "승용 범칙금 2만 원"
+    },
+    {
+      "id": "highway-max-speed",
+      "license": "highway",
+      "prompt": "편도 2차로 고속도로, 승용차의 기본 최고속도는?",
+      "choices": ["시속 100km", "시속 110km", "시속 120km", "시속 90km"],
+      "answer": 0,
+      "explanation": "기본은 시속 100km예요. 경찰청이 따로 지정한 구간만 시속 120km까지 달릴 수 있어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 제19조 제1항"
+    },
+    {
+      "id": "highway-wet-road-speed",
+      "license": "highway",
+      "prompt": "비가 와 노면이 젖었어요. 최고속도는?",
+      "choices": ["최고속도의 20%를 줄인 속도", "최고속도의 50%를 줄인 속도", "최고속도의 10%를 줄인 속도", "최고속도 그대로"],
+      "answer": 0,
+      "explanation": "노면이 젖으면 20%를 줄여요. 폭우나 안개로 앞이 100m 이내만 보이면 50%를 줄여요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 제19조 제2항"
+    },
+    {
+      "id": "highway-missed-exit",
+      "license": "highway",
+      "prompt": "나갈 출구를 지나쳤어요. 어떻게 할까요?",
+      "choices": ["다음 출구로 나가 돌아온다", "갓길에서 천천히 후진한다", "비상등을 켜고 후진한다", "분리대 틈으로 유턴한다"],
+      "answer": 0,
+      "explanation": "고속도로에서는 횡단·유턴·후진이 모두 금지예요. 다음 출구로 나가요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제62조",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "highway-breakdown-sign",
+      "license": "highway",
+      "prompt": "고속도로에서 차가 고장 나면 꼭 설치할 것은?",
+      "choices": ["안전삼각대", "비상등만 켜 두기", "트렁크 열어 두기", "보닛 열어 두기"],
+      "answer": 0,
+      "explanation": "뒤에서 오는 차가 볼 수 있는 곳에 안전삼각대를 세워요. 밤에는 적색 섬광신호도 더해요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 제40조 제1항",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "highway-motorcycle",
+      "license": "highway",
+      "prompt": "고속도로를 달릴 수 없는 차는?",
+      "choices": ["배기량이 큰 오토바이", "1톤 화물차", "경차", "15인승 승합차"],
+      "answer": 0,
+      "explanation": "이륜자동차는 배기량과 관계없이 고속도로를 달릴 수 없어요. 긴급자동차만 예외예요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제63조"
+    },
+    {
+      "id": "highway-merge",
+      "license": "highway",
+      "prompt": "고속도로에 들어갈 때 누가 먼저일까요?",
+      "choices": ["이미 본선을 달리는 차", "들어가려는 차", "방향지시등을 먼저 켠 차", "속도가 더 빠른 차"],
+      "answer": 0,
+      "explanation": "들어가는 차는 본선을 달리는 차의 통행을 방해하면 안 돼요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제65조 제1항",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "highway-tunnel-passing",
+      "license": "highway",
+      "prompt": "앞지르기를 할 수 없는 곳은?",
+      "choices": ["터널 안", "긴 직선 구간", "편도 3차로 구간", "출구 2km 전"],
+      "answer": 0,
+      "explanation": "교차로, 터널 안, 다리 위에서는 앞지르기를 할 수 없어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제22조 제3항",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "highway-speeding-fine",
+      "license": "highway",
+      "prompt": "경찰 단속에서 시속 30km 초과로 적발되면 승용 범칙금은?",
+      "choices": ["6만 원", "3만 원", "9만 원", "12만 원"],
+      "answer": 0,
+      "explanation": "시속 20km 초과 40km 이하 위반은 승용 범칙금 6만 원, 벌점 15점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 8",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "highway-safe-distance",
+      "license": "highway",
+      "prompt": "고속도로에서 지켜야 할 안전거리는?",
+      "choices": ["앞차가 급정지해도 피할 거리", "항상 100m 이상", "항상 50m 이상", "차 다섯 대 길이"],
+      "answer": 0,
+      "explanation": "법은 거리를 숫자로 정하지 않아요. 앞차가 갑자기 서도 부딪히지 않을 거리를 두어야 해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제19조 제1항",
+      "penalty": "승용 범칙금 4만 원, 벌점 10점"
+    },
+    {
+      "id": "highway-truck-lane",
+      "license": "highway",
+      "prompt": "편도 3차로 고속도로, 앞지르기하지 않는 화물차의 차로는?",
+      "choices": ["3차로", "2차로", "1차로", "아무 차로나"],
+      "answer": 0,
+      "explanation": "화물차는 오른쪽 차로인 3차로로 달려요. 앞지르기할 때만 바로 왼쪽 2차로를 써요.",
+      "difficulty": "normal",
+      "checked": "2026-11-13",
+      "basis": "도로교통법 시행규칙 별표 9",
+      "scene": {
+        "lanes": 3,
+        "vehicles": [
+          {"kind": "truck", "lane": 3, "at": 0.5, "subject": true},
+          {"kind": "car", "lane": 2, "at": 0.2},
+          {"kind": "car", "lane": 1, "at": 0.75}
+        ]
+      }
+    },
+    {
+      "id": "highway-after-passing",
+      "license": "highway",
+      "prompt": "막히지 않는 편도 3차로 고속도로, 앞지르기를 마친 승용차는?",
+      "choices": ["2차로나 3차로로 옮긴다", "1차로를 계속 달린다", "속도를 줄여 1차로에 머문다", "갓길로 잠시 빠진다"],
+      "answer": 0,
+      "explanation": "1차로는 앞지르기할 때 쓰는 차로예요. 앞지르기를 마치면 2차로나 그보다 오른쪽 차로로 옮겨요.",
+      "difficulty": "normal",
+      "checked": "2026-11-13",
+      "basis": "도로교통법 시행규칙 별표 9",
+      "penalty": "승용 범칙금 4만 원, 벌점 10점",
+      "scene": {
+        "lanes": 3,
+        "vehicles": [
+          {"kind": "car", "lane": 1, "at": 0.3, "subject": true},
+          {"kind": "car", "lane": 2, "at": 0.6},
+          {"kind": "truck", "lane": 3, "at": 0.75}
+        ]
+      }
+    },
+    {
+      "id": "highway-two-lane-truck-passing",
+      "license": "highway",
+      "prompt": "편도 2차로 고속도로, 화물차가 앞차를 앞지를 때 쓰는 차로는?",
+      "choices": ["1차로", "갓길", "2차로 그대로", "앞지를 수 없다"],
+      "answer": 0,
+      "explanation": "편도 2차로 고속도로의 1차로는 앞지르려는 모든 자동차가 써요. 앞지르기를 마치면 2차로로 돌아와요.",
+      "difficulty": "normal",
+      "checked": "2026-11-13",
+      "basis": "도로교통법 시행규칙 별표 9",
+      "scene": {
+        "lanes": 2,
+        "vehicles": [
+          {"kind": "truck", "lane": 2, "at": 1.0, "subject": true},
+          {"kind": "car", "lane": 2, "at": 0.0}
+        ]
+      }
+    },
+    {
+      "id": "intersection-right-turn-red",
+      "license": "intersection",
+      "prompt": "우회전 신호등은 없고 앞 신호가 빨간불이에요. 우회전은?",
+      "choices": ["정지선 앞에서 멈춘 뒤 우회전", "보행자가 없으면 서행하며 우회전", "초록불로 바뀔 때까지 기다린다", "앞차를 따라 멈추지 않고 우회전"],
+      "answer": 0,
+      "explanation": "빨간불이면 정지선 앞에서 먼저 멈춘 뒤, 다른 차를 방해하지 않게 우회전해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 2",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점",
+      "crossing": {
+        "signal": {"lamps": 4, "lit": "red"},
+        "cars": [
+          {"from": "south", "at": "waiting", "subject": true, "turn": "right"}
+        ]
+      }
+    },
+    {
+      "id": "intersection-right-turn-arrow-red",
+      "license": "intersection",
+      "prompt": "우회전 신호등이 빨간불이에요. 우회전은?",
+      "choices": ["할 수 없다", "멈춘 뒤 우회전할 수 있다", "보행자가 없으면 할 수 있다", "서행하면 할 수 있다"],
+      "answer": 0,
+      "explanation": "우회전 신호등이 있으면 그 신호를 따라요. 빨간불이면 멈춘 뒤라도 우회전할 수 없어요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 2",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "intersection-right-turn-pedestrian",
+      "license": "intersection",
+      "prompt": "우회전하는데 횡단보도에 사람이 건너려 해요.",
+      "choices": ["횡단보도 앞에서 일시정지", "보행자 뒤쪽으로 천천히 지나간다", "경적으로 알리고 지나간다", "보행자가 멈춰 서면 지나간다"],
+      "answer": 0,
+      "explanation": "보행자가 건너고 있거나 건너려고 하면 횡단보도 앞에서 일시정지해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제27조 제1항",
+      "penalty": "승용 범칙금 6만 원, 벌점 10점"
+    },
+    {
+      "id": "intersection-yellow",
+      "license": "intersection",
+      "prompt": "교차로 앞에서 노란불로 바뀌었어요.",
+      "choices": ["정지선 앞에서 멈춘다", "속도를 높여 지나간다", "서행하며 지나간다", "앞차를 따라 지나간다"],
+      "answer": 0,
+      "explanation": "노란불이면 정지선 앞에서 멈춰요. 이미 교차로에 들어갔다면 빠르게 빠져나가요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 2",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "intersection-no-signal-entered",
+      "license": "intersection",
+      "prompt": "신호 없는 교차로에 이미 들어간 차가 있다면?",
+      "choices": ["그 차가 먼저 간다", "오른쪽 도로의 차가 먼저 간다", "넓은 도로의 차가 먼저 간다", "직진하는 차가 먼저 간다"],
+      "answer": 0,
+      "explanation": "신호 없는 교차로에서는 이미 들어가 있는 차가 먼저예요. 들어가려는 차가 양보해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제26조 제1항",
+      "penalty": "승용 범칙금 4만 원",
+      "crossing": {
+        "cars": [
+          {"from": "south", "at": "waiting", "subject": true},
+          {"from": "west", "at": "inside"}
+        ]
+      }
+    },
+    {
+      "id": "intersection-no-signal-right",
+      "license": "intersection",
+      "prompt": "신호 없는 교차로에 두 차가 동시에 들어가려 해요.",
+      "choices": ["오른쪽 도로의 차가 먼저", "왼쪽 도로의 차가 먼저", "직진하는 차가 먼저", "속도가 빠른 차가 먼저"],
+      "answer": 0,
+      "explanation": "동시에 들어가려 할 때는 오른쪽 도로의 차에 양보해요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제26조 제3항",
+      "penalty": "승용 범칙금 4만 원",
+      "crossing": {
+        "cars": [
+          {"from": "south", "at": "waiting", "subject": true},
+          {"from": "east", "at": "waiting"}
+        ]
+      }
+    },
+    {
+      "id": "intersection-wide-road",
+      "license": "intersection",
+      "prompt": "좁은 길에서 넓은 길과 만나는 신호 없는 교차로예요.",
+      "choices": ["서행하고 넓은 길의 차에 양보", "오른쪽 차만 없으면 그대로 진입", "넓은 길의 차가 양보해 준다", "먼저 도착했으면 먼저 진입"],
+      "answer": 0,
+      "explanation": "좁은 길에서 들어갈 때는 서행하고, 넓은 길에서 들어오는 차에 양보해요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제26조 제2항",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "intersection-no-signal-left-turn",
+      "license": "intersection",
+      "prompt": "신호 없는 교차로에서 좌회전해요. 양보할 차는?",
+      "choices": ["직진·우회전하려는 차", "뒤따라오는 차", "왼쪽에서 오는 차만", "양보할 차는 없다"],
+      "answer": 0,
+      "explanation": "좌회전하는 차는 그 교차로에서 직진하거나 우회전하려는 차에 양보해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제26조 제4항",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "intersection-roundabout",
+      "license": "intersection",
+      "prompt": "회전교차로에 들어가려 해요. 누가 먼저일까요?",
+      "choices": ["이미 돌고 있는 차", "들어가려는 차", "오른쪽에서 오는 차", "덩치가 큰 차"],
+      "answer": 0,
+      "explanation": "회전교차로에 들어갈 때는 서행하거나 일시정지하고, 이미 돌고 있는 차에 양보해요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제25조의2 제2항",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "intersection-unprotected-left",
+      "license": "intersection",
+      "prompt": "비보호좌회전 표지가 있는 곳, 좌회전은 언제?",
+      "choices": ["초록불에 마주 오는 차가 없을 때", "빨간불에 마주 오는 차가 없을 때", "노란불로 바뀌었을 때", "좌회전 화살표가 켜질 때만"],
+      "answer": 0,
+      "explanation": "비보호좌회전은 초록불일 때, 마주 오는 차를 방해하지 않게 조심해서 해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 2, 별표 6 (329 비보호좌회전표지)",
+      "penalty": "빨간불 좌회전 시 승용 범칙금 6만 원, 벌점 15점",
+      "crossing": {
+        "signal": {"lamps": 3, "lit": "green"},
+        "sign": 329,
+        "cars": [
+          {"from": "south", "at": "waiting", "subject": true, "turn": "left"},
+          {"from": "north", "at": "inside"}
+        ]
+      }
+    },
+    {
+      "id": "intersection-emergency",
+      "license": "intersection",
+      "prompt": "교차로 근처에서 구급차가 다가와요.",
+      "choices": ["교차로를 피해 일시정지", "교차로 한가운데서 바로 멈춘다", "속도를 높여 먼저 지나간다", "그 자리에서 비상등만 켠다"],
+      "answer": 0,
+      "explanation": "교차로나 그 부근에서는 교차로를 피해 일시정지해요. 다른 곳에서는 길을 비켜 줘요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제29조 제4항",
+      "penalty": "승용 범칙금 6만 원, 벌점 10점"
+    },
+    {
+      "id": "intersection-signal-fine",
+      "license": "intersection",
+      "prompt": "신호를 어겨 경찰에 적발되면 승용 범칙금과 벌점은?",
+      "choices": ["6만 원, 벌점 15점", "6만 원, 벌점 30점", "4만 원, 벌점 15점", "3만 원, 벌점 10점"],
+      "answer": 0,
+      "explanation": "신호·지시 위반은 승용 범칙금 6만 원, 벌점 15점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 8",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "intersection-gridlock-fine",
+      "license": "intersection",
+      "prompt": "초록불이라도 건너편이 막혔는데 들어가면? (경찰 단속)",
+      "choices": ["교차로 통행방법 위반, 4만 원", "문제없다, 초록불이니까", "신호위반, 6만 원", "경고만 받는다"],
+      "answer": 0,
+      "explanation": "앞이 막혀 교차로 안에 멈추게 될 것 같으면 초록불이라도 들어가면 안 돼요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제25조 제5항",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "intersection-roundabout-direction",
+      "license": "intersection",
+      "prompt": "회전교차로를 시계 방향으로 돌면 벌점은?",
+      "choices": ["30점", "10점", "15점", "벌점 없이 범칙금만"],
+      "answer": 0,
+      "explanation": "회전교차로는 반시계 방향으로만 돌아요. 반대로 돌면 승용 범칙금 6만 원, 벌점 30점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제25조의2 제1항",
+      "penalty": "승용 범칙금 6만 원, 벌점 30점"
+    },
+    {
+      "id": "intersection-yield-fine",
+      "license": "intersection",
+      "prompt": "신호 없는 교차로에서 양보하지 않아 적발되면 승용 범칙금은?",
+      "choices": ["4만 원", "2만 원", "6만 원", "9만 원"],
+      "answer": 0,
+      "explanation": "교차로 양보운전 위반은 승용 범칙금 4만 원이에요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 8",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "school-zone-speed",
+      "license": "school_zone",
+      "prompt": "어린이보호구역의 제한속도는?",
+      "choices": ["시속 30km 이내", "시속 40km 이내", "시속 50km 이내", "시속 20km 이내"],
+      "answer": 0,
+      "explanation": "어린이보호구역은 시속 30km 이내로 제한할 수 있어요. 표지판의 속도를 꼭 확인해요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제12조 제1항"
+    },
+    {
+      "id": "school-zone-hours",
+      "license": "school_zone",
+      "prompt": "어린이보호구역 범칙금·과태료가 무거워지는 시간은?",
+      "choices": ["오전 8시~오후 8시", "등하교 시간에만", "24시간 내내", "평일 낮에만"],
+      "answer": 0,
+      "explanation": "오전 8시부터 오후 8시까지 신호·속도·주정차 위반 등은 범칙금과 과태료가 더 무거워요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 제93조 제2항, 제88조 제4항"
+    },
+    {
+      "id": "school-zone-signal",
+      "license": "school_zone",
+      "prompt": "오후 3시 어린이보호구역에서 신호위반으로 적발되면?",
+      "choices": ["범칙금 12만 원, 벌점 30점", "범칙금 6만 원, 벌점 15점", "범칙금 12만 원, 벌점 15점", "범칙금 9만 원, 벌점 30점"],
+      "answer": 0,
+      "explanation": "오전 8시~오후 8시 어린이보호구역 신호위반은 범칙금과 벌점이 평소의 두 배예요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 10, 시행규칙 별표 28",
+      "penalty": "승용 범칙금 12만 원, 벌점 30점"
+    },
+    {
+      "id": "school-zone-unsignaled-crosswalk",
+      "license": "school_zone",
+      "prompt": "어린이보호구역, 신호등 없는 횡단보도에 사람이 없어요.",
+      "choices": ["그래도 일시정지한다", "서행하며 지나간다", "사람이 없으니 그대로 간다", "어린이가 안 보이면 지나간다"],
+      "answer": 0,
+      "explanation": "어린이보호구역의 신호등 없는 횡단보도 앞에서는 건너는 사람이 없어도 일시정지해요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제27조 제7항",
+      "penalty": "승용 범칙금 6만 원, 벌점 10점"
+    },
+    {
+      "id": "school-zone-child-crossing",
+      "license": "school_zone",
+      "prompt": "어린이가 보호자 없이 길을 건너고 있어요.",
+      "choices": ["일시정지한다", "서행하며 옆으로 피해 간다", "경적으로 알려 준다", "다 건너기 전 뒤로 지나간다"],
+      "answer": 0,
+      "explanation": "어린이가 보호자 없이 건너거나 도로에서 놀면 일시정지해요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제49조 제1항 제2호"
+    },
+    {
+      "id": "school-zone-stopping",
+      "license": "school_zone",
+      "prompt": "어린이보호구역 도로에 잠깐 정차해도 될까요?",
+      "choices": ["정차도 주차도 안 된다", "5분 이내 정차는 된다", "비상등을 켜면 된다", "아이를 내려 줄 때는 된다"],
+      "answer": 0,
+      "explanation": "어린이보호구역은 정차·주차 금지 장소예요. 경찰 지시나 위험방지 같은 경우만 예외예요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제32조",
+      "penalty": "오전 8시~오후 8시 승용 범칙금 12만 원"
+    },
+    {
+      "id": "school-zone-parking",
+      "license": "school_zone",
+      "prompt": "오후 2시 어린이보호구역 주정차 과태료(승용)는?",
+      "choices": ["12만 원", "4만 원", "8만 원", "6만 원"],
+      "answer": 0,
+      "explanation": "오전 8시~오후 8시 어린이보호구역 주정차 과태료는 일반 도로의 3배인 12만 원이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 7",
+      "penalty": "승용 과태료 12만 원 (같은 곳 2시간 이상 13만 원)"
+    },
+    {
+      "id": "school-zone-camera-speeding",
+      "license": "school_zone",
+      "prompt": "오전 10시 보호구역 카메라에 시속 25km 초과로 찍히면?",
+      "choices": ["과태료 10만 원", "과태료 7만 원", "범칙금 6만 원", "과태료 13만 원"],
+      "answer": 0,
+      "explanation": "어린이보호구역 시속 20km 초과 40km 이하 과속은 승용 기준 과태료 10만 원이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 7",
+      "penalty": "승용 과태료 10만 원"
+    },
+    {
+      "id": "school-zone-speeding-points",
+      "license": "school_zone",
+      "prompt": "오후 4시 보호구역에서 시속 30km 초과로 경찰에 적발되면 벌점은?",
+      "choices": ["30점", "15점", "60점", "벌점 없음"],
+      "answer": 0,
+      "explanation": "평소 15점인 시속 20~40km 초과가 오전 8시~오후 8시 보호구역에서는 두 배인 30점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 28",
+      "penalty": "승용 범칙금 9만 원, 벌점 30점"
+    },
+    {
+      "id": "school-zone-small-speeding",
+      "license": "school_zone",
+      "prompt": "오전 9시 보호구역에서 시속 10km 초과로 적발되면 벌점은?",
+      "choices": ["15점", "벌점 없음", "10점", "30점"],
+      "answer": 0,
+      "explanation": "시속 20km 이하 과속은 보통 벌점이 없지만, 오전 8시~오후 8시 보호구역에서는 15점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 28",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "school-bus-stopped",
+      "license": "school_zone",
+      "prompt": "어린이통학버스가 점멸등을 켜고 서 있어요. 옆 차로라면?",
+      "choices": ["버스 앞에서 일시정지 후 서행", "서행만 하면 된다", "천천히 앞질러 간다", "경적으로 알리고 지나간다"],
+      "answer": 0,
+      "explanation": "버스가 선 차로와 바로 옆 차로의 차는 버스 앞에서 일시정지해 안전을 확인한 뒤 서행해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제51조 제1항",
+      "penalty": "승용 범칙금 9만 원, 벌점 30점"
+    },
+    {
+      "id": "school-bus-oncoming",
+      "license": "school_zone",
+      "prompt": "편도 1차로, 반대편 통학버스가 점멸등을 켜고 섰어요.",
+      "choices": ["나도 일시정지 후 서행", "반대편이니 그대로 간다", "서행만 하면 된다", "경적을 울리며 지나간다"],
+      "answer": 0,
+      "explanation": "중앙선이 없거나 편도 1차로인 도로에서는 반대편 차도 버스 앞에서 일시정지 후 서행해요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제51조 제2항",
+      "penalty": "승용 범칙금 9만 원, 벌점 30점"
+    },
+    {
+      "id": "school-bus-passing",
+      "license": "school_zone",
+      "prompt": "어린이를 태운 표시를 한 통학버스가 앞에 가요.",
+      "choices": ["앞지르지 않는다", "왼쪽으로 앞지른다", "버스가 느리면 앞지른다", "안전하면 앞지른다"],
+      "answer": 0,
+      "explanation": "어린이나 영유아를 태웠다는 표시를 한 통학버스는 앞지를 수 없어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제51조 제3항",
+      "penalty": "승용 범칙금 9만 원, 벌점 30점"
+    },
+    {
+      "id": "school-zone-minsik-law",
+      "license": "school_zone",
+      "prompt": "민식이법으로 더 무겁게 처벌하는 것은?",
+      "choices": ["보호구역 어린이 교통사고", "보호구역 주정차 위반", "고속도로 과속", "음주운전"],
+      "answer": 0,
+      "explanation": "어린이보호구역에서 속도·안전 의무를 어겨 어린이를 다치게 하면 더 무겁게 처벌해요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "특정범죄 가중처벌 등에 관한 법률 제5조의13",
+      "penalty": "상해 시 1~15년 징역 또는 500만~3천만 원 벌금"
+    },
+    {
+      "id": "school-zone-child-age",
+      "license": "school_zone",
+      "prompt": "민식이법에서 '어린이'는 몇 살 미만일까요?",
+      "choices": ["13세 미만", "12세 미만", "10세 미만", "초등학생까지"],
+      "answer": 0,
+      "explanation": "민식이법이 보호하는 어린이는 13세 미만이에요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "특정범죄 가중처벌 등에 관한 법률 제5조의13"
+    },
+    {
+      "id": "city-safe-speed-5030",
+      "license": "city",
+      "prompt": "주거·상업지역 일반도로의 제한속도는?",
+      "choices": ["시속 50km", "시속 60km", "시속 40km", "시속 30km"],
+      "answer": 0,
+      "explanation": "도시 지역 일반도로는 시속 50km가 기본이에요. 따로 지정한 구간만 60km예요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 제19조 제1항"
+    },
+    {
+      "id": "city-pedestrian-no-crosswalk",
+      "license": "city",
+      "prompt": "횡단보도가 없는 곳에서 사람이 길을 건너고 있어요.",
+      "choices": ["안전거리를 두고 일시정지", "경적으로 알리고 지나간다", "사람 뒤쪽으로 서행해 지나간다", "무단횡단이니 그대로 간다"],
+      "answer": 0,
+      "explanation": "횡단보도가 없는 곳이라도 사람이 건너고 있으면 안전거리를 두고 일시정지해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제27조 제5항",
+      "penalty": "승용 범칙금 4만 원, 벌점 10점"
+    },
+    {
+      "id": "city-shared-road",
+      "license": "city",
+      "prompt": "중앙선 없는 좁은 골목에서 보행자 옆을 지나가요.",
+      "choices": ["안전거리를 두고 서행", "경적으로 비켜 달라 한다", "빨리 지나가 시간을 줄인다", "전조등으로 알리고 지나간다"],
+      "answer": 0,
+      "explanation": "보도와 차도가 나뉘지 않은 골목에서는 보행자와 안전거리를 두고 서행해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제27조 제6항",
+      "penalty": "승용 범칙금 4만 원, 벌점 10점"
+    },
+    {
+      "id": "city-phone",
+      "license": "city",
+      "prompt": "운전 중 휴대전화를 써도 되는 때는?",
+      "choices": ["차가 멈춰 있을 때", "천천히 달릴 때", "한 손으로 짧게 통화할 때", "막히는 길에서 서행할 때"],
+      "answer": 0,
+      "explanation": "운전 중 휴대전화는 차가 멈춰 있거나 긴급 신고를 할 때 등에만 예외로 쓸 수 있어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제49조 제1항 제10호",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "city-phone-fine",
+      "license": "city",
+      "prompt": "운전 중 휴대전화를 쓰다 경찰에 적발되면(승용)?",
+      "choices": ["범칙금 6만 원, 벌점 15점", "범칙금 3만 원, 벌점 10점", "범칙금 6만 원, 벌점 30점", "과태료 2만 원"],
+      "answer": 0,
+      "explanation": "운전 중 휴대전화 사용은 승용 범칙금 6만 원, 벌점 15점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 8",
+      "penalty": "승용 범칙금 6만 원, 벌점 15점"
+    },
+    {
+      "id": "city-seatbelt",
+      "license": "city",
+      "prompt": "시내에서도 뒷좌석 동승자가 안전띠를 매야 할까요?",
+      "choices": ["모든 좌석이 매야 한다", "고속도로에서만 맨다", "앞좌석만 맨다", "어린이만 맨다"],
+      "answer": 0,
+      "explanation": "길의 종류와 관계없이 운전자는 모든 좌석의 동승자에게도 안전띠를 매게 해야 해요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제50조 제1항",
+      "penalty": "운전자 미착용 승용 범칙금 3만 원"
+    },
+    {
+      "id": "city-door",
+      "license": "city",
+      "prompt": "길가에 세운 뒤 문을 열 때는?",
+      "choices": ["뒤에서 오는 차·자전거 확인", "비상등을 켜면 바로 연다", "인도 쪽 문은 확인 없이 연다", "빨리 열고 닫으면 된다"],
+      "answer": 0,
+      "explanation": "운전자는 안전을 확인한 뒤 문을 열어야 하고, 동승자도 위험하지 않게 살펴야 해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제49조 제1항 제7호",
+      "penalty": "승용 범칙금 3만 원"
+    },
+    {
+      "id": "city-drunk-limit",
+      "license": "city",
+      "prompt": "운전이 금지되는 혈중알코올농도 기준은?",
+      "choices": ["0.03% 이상", "0.05% 이상", "0.08% 이상", "0.1% 이상"],
+      "answer": 0,
+      "explanation": "혈중알코올농도 0.03% 이상이면 술에 취한 상태로 보고 운전할 수 없어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제44조 제4항"
+    },
+    {
+      "id": "city-water-splash",
+      "license": "city",
+      "prompt": "비 온 뒤 물웅덩이 옆에 사람이 서 있어요.",
+      "choices": ["속도를 줄여 물이 안 튀게", "그대로 지나간다", "경적으로 피하라고 알린다", "비상등만 켜고 지나간다"],
+      "answer": 0,
+      "explanation": "고인 물을 튀겨 다른 사람에게 피해를 주면 안 돼요. 속도를 줄여 지나가요.",
+      "difficulty": "easy",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제49조 제1항 제1호",
+      "penalty": "승용 과태료 2만 원"
+    },
+    {
+      "id": "city-no-parking-bridge",
+      "license": "city",
+      "prompt": "주차할 수 없는 곳은?",
+      "choices": ["다리 위", "노상주차장 구획 안", "주차 허용 표지가 있는 길가", "공영주차장"],
+      "answer": 0,
+      "explanation": "터널 안과 다리 위에는 주차할 수 없어요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제33조",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "city-crosswalk-parking",
+      "license": "city",
+      "prompt": "횡단보도에서 몇 m 이내에 정차·주차할 수 없을까요?",
+      "choices": ["10m", "5m", "3m", "20m"],
+      "answer": 0,
+      "explanation": "횡단보도로부터 10m 이내는 정차·주차 금지예요. 교차로 모퉁이는 5m 이내가 금지예요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제32조",
+      "penalty": "승용 범칙금 4만 원"
+    },
+    {
+      "id": "city-bicycle",
+      "license": "city",
+      "prompt": "같은 방향으로 가는 자전거 옆을 지날 때는?",
+      "choices": ["충돌을 피할 거리를 두고 지난다", "경적으로 알리고 붙어 지난다", "자전거가 비켜야 한다", "속도를 높여 빨리 지난다"],
+      "answer": 0,
+      "explanation": "자전거 옆을 지날 때는 부딪히지 않을 만큼 충분한 거리를 두어야 해요.",
+      "difficulty": "normal",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제19조 제2항"
+    },
+    {
+      "id": "city-fine-vs-fee",
+      "license": "city",
+      "prompt": "범칙금과 과태료의 차이로 맞는 것은?",
+      "choices": ["범칙금에는 벌점이 붙을 수 있다", "과태료에도 벌점이 붙는다", "둘은 같은 말이다", "과태료는 운전자만 낸다"],
+      "answer": 0,
+      "explanation": "범칙금은 단속된 운전자에게 부과되고 벌점이 붙을 수 있어요. 과태료에는 벌점이 없어요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 제160조 제3항, 시행령 별표 6·8"
+    },
+    {
+      "id": "city-signal-camera",
+      "license": "city",
+      "prompt": "신호위반이 무인카메라에 찍히면(승용)?",
+      "choices": ["과태료 7만 원", "범칙금 6만 원, 벌점 15점", "과태료 13만 원", "과태료 6만 원"],
+      "answer": 0,
+      "explanation": "무인카메라 단속은 과태료 7만 원이고 벌점은 없어요. 경찰 단속은 범칙금 6만 원에 벌점 15점이에요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행령 별표 6·8, 시행규칙 별표 28",
+      "penalty": "승용 과태료 7만 원"
+    },
+    {
+      "id": "city-penalty-points",
+      "license": "city",
+      "prompt": "벌점이 몇 점 이상이면 면허정지가 시작될까요?",
+      "choices": ["40점", "30점", "60점", "121점"],
+      "answer": 0,
+      "explanation": "처분벌점이 40점 이상이면 면허정지가 시작되고, 1점에 하루씩 정지돼요.",
+      "difficulty": "hard",
+      "checked": "2026-11-08",
+      "basis": "도로교통법 시행규칙 별표 28"
+    }
+  ]
+}

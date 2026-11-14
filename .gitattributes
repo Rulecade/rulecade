@@ -1,0 +1,16 @@
+* text=auto eol=lf
+*.bat text eol=crlf
+*.cmd text eol=crlf
+*.ps1 text eol=crlf
+*.jar binary
+*.jks binary
+*.apk binary
+*.png binary
+*.ttf binary
+
+.github export-ignore
+.githooks export-ignore
+CONTRIBUTING.md export-ignore
+scripts/sync.sh export-ignore
+scripts/bump.sh export-ignore
+scripts/publish.sh export-ignore

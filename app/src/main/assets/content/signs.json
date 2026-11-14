@@ -1,0 +1,78 @@
+{
+  "version": 1,
+  "checked": "2026-11-13",
+  "signs": [
+    {
+      "id": "roundabout",
+      "number": 109,
+      "category": "caution",
+      "name": "회전형교차로",
+      "meaning": "회전형 교차로가 있음을 알리는 것",
+      "questions": ["intersection-roundabout", "intersection-roundabout-direction"]
+    },
+    {
+      "id": "crosswalk",
+      "number": 132,
+      "category": "caution",
+      "name": "횡단보도",
+      "meaning": "횡단보도(대각선 횡단보도를 포함한다)가 있음을 알리는 것",
+      "questions": ["intersection-right-turn-pedestrian", "school-zone-unsignaled-crosswalk"]
+    },
+    {
+      "id": "children",
+      "number": 133,
+      "category": "caution",
+      "name": "어린이보호",
+      "meaning": "어린이 또는 영유아의 통행로나 횡단보도가 있음을 알리는 것",
+      "questions": ["school-zone-speed", "school-zone-child-crossing"]
+    },
+    {
+      "id": "no-passing",
+      "number": 217,
+      "category": "regulation",
+      "name": "앞지르기금지",
+      "meaning": "차의 앞지르기를 금지하는 것",
+      "questions": ["highway-tunnel-passing"]
+    },
+    {
+      "id": "no-stopping",
+      "number": 218,
+      "category": "regulation",
+      "name": "정차·주차금지",
+      "meaning": "차의 정차 및 주차를 금지하는 것",
+      "questions": ["city-crosswalk-parking", "school-zone-stopping"]
+    },
+    {
+      "id": "no-parking",
+      "number": 219,
+      "category": "regulation",
+      "name": "주차금지",
+      "meaning": "차의 주차를 금지하는 것",
+      "questions": ["city-no-parking-bridge"]
+    },
+    {
+      "id": "max-speed",
+      "number": 224,
+      "category": "regulation",
+      "name": "최고속도제한",
+      "meaning": "표지판에 표시한 속도로 자동차 등의 최고속도를 지정하는 것",
+      "questions": ["highway-max-speed", "city-safe-speed-5030"]
+    },
+    {
+      "id": "min-speed",
+      "number": 225,
+      "category": "regulation",
+      "name": "최저속도제한",
+      "meaning": "표지판에 표시한 속도로 자동차 등의 최저속도를 지정하는 것",
+      "questions": ["highway-minimum-speed"]
+    },
+    {
+      "id": "unprotected-left",
+      "number": 329,
+      "category": "instruction",
+      "name": "비보호좌회전",
+      "meaning": "진행신호시 반대방면에서 오는 차량에 방해가 되지 아니하도록 좌회전을 조심스럽게 할 수 있다는 것",
+      "questions": ["intersection-unprotected-left"]
+    }
+  ]
+}

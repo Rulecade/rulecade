@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- The system splash shows the background only; the opening animation draws the logo. -->
+    <style name="Theme.Rulecade" parent="Base.Theme.Rulecade">
+        <item name="android:windowSplashScreenBackground">@color/rc_background_primary</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@android:color/transparent</item>
+    </style>
+</resources>
