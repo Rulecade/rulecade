@@ -33,13 +33,17 @@ scripts\emu.cmd wait
 scripts\emu.cmd run
 ```
 
+Review APK without building: start the emulator, then `adb install -r apk/Rulecade_Rulecade_release.apk`.
+
 Virtual Console: `emu console` → http://127.0.0.1:8282 (`PLEOS_CONSOLE_PORT` to change).
 
 Day/night like the car: `emu theme day|night`. Slow animations: `emu anim 10` (`emu anim 1` restores). Drive through the Virtual Console: `emu drive 40` puts the car in D at 40 km/h, and Pleos covers the app (Rulecade is not declared Distraction Optimized); `emu park` shifts back to P and the app returns where it was. Passenger seat: `emu seat on|off` (the app offers profiles). Charging: `emu charge on|off` (home offers a ten-minute round). Debug builds: `emu navi` replays a short drive's navigation events (school zone, no-parking zone, speed limit, roundabout) and the app finds their signs. App window screenshot for PRs: `emu shot file.png`.
 
-## Stack
+## Stack and test environment
 
 Pleos Connect Emulator v2.1.0 (Android 14, API 34) · Kotlin · Jetpack Compose · Pleos Vehicle SDK 2.3.2
+
+Tested on that emulator's 2560 × 1440 px, 160 dpi display, full screen and in the 1:1 split view, in day and night themes.
 
 ## Layout
 
@@ -48,7 +52,7 @@ Pleos Connect Emulator v2.1.0 (Android 14, API 34) · Kotlin · Jetpack Compose 
 | `app/` | Android app |
 | `scripts/` | Emulator control (`emu.sh`, `emu.cmd`) |
 | `design/` | Design tokens (`tokens.json`), the single source for the app theme |
-| `apk/` | Release APKs for review |
+| `apk/` | Signed release APK for review (`Rulecade_Rulecade_release.apk`) |
 
 
 ---
